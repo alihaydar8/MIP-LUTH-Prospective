@@ -51,35 +51,7 @@ def main():
     remplire_liste_fichier(liste_vide,fichier_vide_nom)
 
     # Ajouter au tableau les liens à indexed
-    liste_url = ["https://www.francetvinfo.fr/sante/handicap/temoignages-des-etudiants-handicapes-racontent-les-discriminations-a-l-universite-je-passe-plus-de-temps-a-me-battre-pour-mes-droits_4808703.html",
-                "https://www.radiofrance.fr/franceinter/ils-sont-etudiants-et-parents-le-casse-tete-de-milliers-de-jeunes-en-france-3576273",
-                "https://universites.urbania.ca/article/plaidoyer-pour-aider-les-parents-etudiants",
-                "https://www.lemonde.fr/campus/article/2020/01/31/etre-etudiant-et-parent-une-situation-compliquee-a-assumer_6028021_4401467.html",
-                "https://inspire-orientation.org/blog/handicap-et-etudes-superieures-comment-surmonter-les-difficultes",
-                "https://www.ined.fr/fr/tout-savoir-population/memos-demo/focus/etudier-et-avoir-des-enfants/",
-                "https://books.openedition.org/ined/12722?lang=fr#:~:text=Lecture%20%3A%20%C2%AB%20Ensemble%20%C2%BB%20%3A%2029,OVE%2C%20enqu%C3%AAte%20CdV%20de%202016",
-                "https://www.ined.fr/fr/tout-savoir-population/memos-demo/focus/etudier-et-avoir-des-enfants",
-                "https://www.letudiant.fr/educpros/enquetes/handicap-dans-l-enseignement-superieur-une-prise-de-conscience-et-des-defis-a-relever.html",
-                "https://www.letudiant.fr/etudes/fac/a-l-universite-les-etudiants-handicapes-peinent-a-faire-respecter-leur-droit-a-etudier.html",
-                "https://www.campusfrance.org/fr/etudiant-situation-handicap-France",
-                "https://www.enseignementsup-recherche.gouv.fr/fr/etudiants-en-situation-de-handicap-51299",
-                "https://publication.enseignementsup-recherche.gouv.fr/eesr/FR/T243/les_etudiants_en_situation_de_handicap_dans_l_enseignement_superieur/",
-                "https://www.service-public.fr/particuliers/vosdroits/F2326#:~:text=Un%20%C3%A9tudiant%20en%20situation%20de,un%20projet%20individuel%20d'int%C3%A9gration.",
-                "https://www.space4ourplanet.org/fr/story/les-parents-doivent-encourager-leurs-filles-a-sinteresser-aux-phenomenes-de-lunivers-et-a-nous-aider-a-elucider-leurs-mysteres/",
-                "https://e-mediatheque.sqy.fr/Default/doc/SYRACUSE/4029434",
-                "https://www.le-site-de.com/l-univers-des-parents-oberhoffen-sur-moder_160191.html",
-                "https://www.societe.com/etablissement/l-univers-des-parents-49876054500018.html",
-                "https://www.cultura.com/p-parents-dans-un-monde-d-ecrans-comment-vous-brancher-a-l-univers-de-vos-enfants-de-0-a-18-ans-4417685.html",
-                "https://www.psychologies.com/Culture/Les-phrases-de-sagesse/Phrases-de-sagesse-Maternite/Une-mere-c-est-vaste-comme-le-monde-Elle-est-l-univers-de-chaque-enfant-qu-elle-a-porte-un-univers-unique-qu-elle-a-invente-a-chaque-maternite    ",
-                "https://www.cairn.info/revue-de-l-ofce-2020-3-page-5.htm",
-                "https://isere.info-jeunes.fr/etudes-superieures-comment-rebondir-en-cas-de-decrochage",
-                "https://www.letudiant.fr/college/difficultes-scolaires-comment-eviter-de-decrocher-completement.html",
-                "https://etudiant.lefigaro.fr/article/selon-un-sondage-le-decrochage-scolaire-atteint-un-pic-au-moment-des-vacances-de-la-toussaint_d7d793cc-2cd5-11ec-81bc-f04a2133736d/",
-                "https://www.apprendreaapprendre.com/reussite_scolaire/etudiants/",
-                "https://diplomeo.com/actualite-echec_etude_superieures",
-                "https://mcetv.ouest-france.fr/mon-mag-campus/sante-et-vie-etudiante/etudiant-comment-eviter-le-decrochage-scolaire-et-rester-motive-17112021/",
-                "https://www.la-croix.com/Famille/Reussite-scolaire-isolement-etude-mesure-fort-impact-pandemie-eleves-etudiants-2021-10-14-1201180583",
-                ]
+    liste_url = []
     for url in liste_url:
         response = requests.get(url)
         if response.status_code != 200:
